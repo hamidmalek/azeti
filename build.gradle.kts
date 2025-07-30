@@ -44,6 +44,7 @@ dependencies {
     implementation("com.giffing.bucket4j.spring.boot.starter:bucket4j-spring-boot-starter:0.8.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.flywaydb:flyway-core")
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

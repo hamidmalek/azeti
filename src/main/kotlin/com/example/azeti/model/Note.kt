@@ -15,11 +15,11 @@ data class Note(
     val id: UUID = UUID.randomUUID(),
 
     @field:NotBlank(message = "Title must not be blank")
-    @field:Size(max = 30, message = "Title must be at most 255 characters")
+    @field:Size(max = 30, message = "Title must be at most 30 characters")
     @Column(nullable = false, length = 30)
     val title: String,
 
-    @field:Size(max = 255, message = "Content must be at most 10,000 characters")
+    @field:Size(max = 255, message = "Content must be at most 255 characters")
     @Column(nullable = false, columnDefinition = "TEXT")
     val content: String,
 
