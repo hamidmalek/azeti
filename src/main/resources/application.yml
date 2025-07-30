@@ -1,0 +1,24 @@
+jwt:
+  secret: "wL7NfYp+2Qv5oNZ8g3JmXh6P7bT0rYyEuL1cek9dX0U="
+  expiration-ms: 3600000
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+rate-limiting:
+  capacity: 10
+  duration-minutes: 1
+
